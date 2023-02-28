@@ -4,7 +4,6 @@ export default function Contact() {
   return (
     <div>
       <h1>Contact Page</h1>
-      <p>
         <form>
           <div>
             <label>Name</label>
@@ -25,7 +24,6 @@ export default function Contact() {
             <button>Submit Form</button>
           </div>
         </form>
-      </p>
     </div>
   );
 }
