@@ -22,7 +22,7 @@ const ProjectList = () => {
 
         {
             title: "Note Taker",
-            image: "",
+            image: "https://shovelapp.io/wp-content/uploads/2017/03/Take-Notes-Effectively.png",
             url: "https://afternoon-temple-40523.herokuapp.com/",
             repo: "https://github.com/Alasow2001/note-taker"
 
@@ -48,7 +48,7 @@ const ProjectList = () => {
     function projectCards(card){
         return(
         <Card>
-            <Card.Img src={card.image}></Card.Img>
+            <Card.Img src={card.image} className='image'></Card.Img>
             <Card.Body>
                 <Card>{card.title}</Card>
                 <Button href={card.url}>View Site</Button>
