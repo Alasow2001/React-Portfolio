@@ -1,4 +1,5 @@
 import React from 'react';
+import ProjectList from '../ProjectList';
 
 export default function Portfolio() {
   return (
@@ -9,7 +10,7 @@ export default function Portfolio() {
       </p>
 
       <div>
-        <projectList />
+        <ProjectList />
       </div>
     </div>
   );
