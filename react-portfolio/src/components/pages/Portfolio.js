@@ -9,7 +9,7 @@ export default function Portfolio() {
         Welcome to my Portfolio page. Here, you can see a list of some of my most recent projects.
       </p>
 
-      <div>
+      <div className='project-container'>
         <ProjectList />
       </div>
     </div>

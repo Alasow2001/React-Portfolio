@@ -48,7 +48,7 @@ const ProjectList = () => {
     function projectCards(card){
         return(
         <Card>
-            <Card.Img src={card.image} className='image'></Card.Img>
+            <Card.Img src={card.image} className='portfolio-img'></Card.Img>
             <Card.Body>
                 <Card>{card.title}</Card>
                 <Button href={card.url}>View Site</Button>
