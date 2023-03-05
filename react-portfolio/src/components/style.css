@@ -1,3 +1,26 @@
+div{
+    background-color: #ee81ee;
+}
+/* Navbar */
+
+.nav-tabs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: #282524;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    border-style: groove;
+}
+
+button:hover{
+    box-shadow: #282524;
+}
+
 /* Footer styling */
 
 .icons{
@@ -6,10 +29,6 @@
     justify-content: center;
 }
 
-img{
-    height: 75px;
-    width: 75px
-}
 
 .images{
     margin: 2%;
@@ -21,5 +40,145 @@ img{
     justify-content: center;
 }
 
+img {
+    height: 125px;
+    width: 125px
+}
+
 /* Homepage */
+
+.homepage{
+    text-align: center;
+    font-size: 50px;
+    text-decoration:underline;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+}
+
+.toolList {
+    list-style-type: circle;
+    font-size: 20px;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.intro {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+/* Contact Page */
+
+form .form{
+    display: block;
+    width: 100%;
+    margin: 20%;
+    padding: auto;
+}
+
+input{
+    width: 30%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 10px;
+    font-weight: lighter;
+    border-radius: 10px;
+    box-shadow: 15%;
+    padding-left: 5%
+}
+
+.name{
+    height: 10%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    font-weight: lighter;
+    box-sizing: 30px;
+    display: inline-block;
+    margin: 0.625rem 0 0.25rem 0.3rem;
+}
+
+.email{
+    height: 10%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    font-weight: lighter;
+    box-sizing: 30px;
+    display: inline-block;
+    margin: 0.625rem 0 0.25rem 0.3rem;
+}
+
+.message{
+    height: 10%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    font-weight: lighter;
+    border-radius: 10px;
+    box-sizing: 30px;
+    display: inline-block;
+    margin-top: 2%;
+    padding: 100px
+}
+
+.message-title{
+    display: flex;
+    align-items: flex-end;
+    padding-top: 2%;
+}
+
+label{
+    display: inline-block;
+}
+
+/* Portfolio page */
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-right: 15px ;
+    padding-left: 15px ;
+
+}
+
+.project-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Resume page */
+
+iframe{
+    box-sizing: content-box;
+    border-radius: 10px;
+    box-shadow: #1f0336;
+}
+
+.resume-title{
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: #1f0336;
+}
+
+.resume-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Media query */
+@media screen and (max-width: 700px) {
+    .grid {
+      width: 50%;
+      flex-direction: column;
+    }
+
+    .resume-container{
+        width: 25%;
+        height: 25%
+    }
+  }
 
