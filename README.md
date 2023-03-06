@@ -48,4 +48,4 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 
 ## Link
 
-Link to deployed application: https://Alasow2001.github.io/react-portfolio
+Link to deployed application: https://alasow2001.github.io/React-Portfolio/
