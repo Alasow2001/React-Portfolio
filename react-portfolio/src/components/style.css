@@ -8,17 +8,15 @@ div{
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    box-shadow: #282524;
+    background-color: yellowgreen;
+    color: black;
 }
 
 button{
     display: flex;
     justify-content: center;
     border-style: groove;
-}
-
-button:hover{
-    box-shadow: #282524;
+    background-color: goldenrod;
 }
 
 /* Footer styling */
@@ -27,6 +25,7 @@ button:hover{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding-top: 5%;
 }
 
 
@@ -41,8 +40,8 @@ button:hover{
 }
 
 img {
-    height: 125px;
-    width: 125px
+    height: 100px;
+    width: 100px;
 }
 
 /* Homepage */
@@ -53,6 +52,9 @@ img {
     text-decoration:underline;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: lighter;
+    background-color: #4abde4;
+    border-style: solid;
+    border-radius: 125px;
 }
 
 .toolList {
@@ -60,12 +62,17 @@ img {
     font-size: 20px;
     font-style: italic;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #4abde4;
+    border-radius: 45px;
+    border-style:groove;
 }
 
 .intro {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 25px;
     font-weight: normal;
+    background-color: #4abde4;
+    border-style: dashed solid;
 }
 
 /* Contact Page */
@@ -84,7 +91,8 @@ input{
     font-weight: lighter;
     border-radius: 10px;
     box-shadow: 15%;
-    padding-left: 5%
+    padding-left: 5%;
+    margin-top: 2%;
 }
 
 .name{
@@ -94,7 +102,7 @@ input{
     font-weight: lighter;
     box-sizing: 30px;
     display: inline-block;
-    margin: 0.625rem 0 0.25rem 0.3rem;
+    margin-top: 2%;
 }
 
 .email{
@@ -104,7 +112,7 @@ input{
     font-weight: lighter;
     box-sizing: 30px;
     display: inline-block;
-    margin: 0.625rem 0 0.25rem 0.3rem;
+    margin-top: 2%;
 }
 
 .message{
@@ -116,12 +124,12 @@ input{
     box-sizing: 30px;
     display: inline-block;
     margin-top: 2%;
-    padding: 100px
+    padding: 75px
 }
 
 .message-title{
     display: flex;
-    align-items: flex-end;
+    align-items: left;
     padding-top: 2%;
 }
 
@@ -132,11 +140,11 @@ label{
 /* Portfolio page */
 
 .grid{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding-right: 15px ;
-    padding-left: 15px ;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 25px;
+    column-gap: 25px;
 
 }
 
@@ -172,8 +180,9 @@ iframe{
 /* Media query */
 @media screen and (max-width: 700px) {
     .grid {
-      width: 50%;
-      flex-direction: column;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 50px;
+        padding: auto;
     }
 
     .resume-container{
